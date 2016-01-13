@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Budget</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div>
+		<label>Title: </label>
+		<input type="text" id="transactionName">		
+	</div>
+	<input type="number" id="amount">
+	<input type="date" id="date">
+	<button class="btn btn-success add">Add Transaction</button>
+	<table class="table table-striped" style="width:100%">
+		<thead>
+			<tr>
+				<th>Transaction</th>
+				<th>Amount</th>
+				<th>Date</th>
+				<th>Remove?</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="template">
+				<td class="transaction">Jill</td>
+				<td class="amount">Smith</td>		
+				<td class="date">50</td>
+				<td><i class="fa fa-trash remove"></i></td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
